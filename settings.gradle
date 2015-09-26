@@ -1,2 +1,3 @@
 //
-//include ':project-spi'
+include ':project', ':project-spi',\
+':project-maps', ':wizard-import-orm'
