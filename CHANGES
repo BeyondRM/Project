@@ -3,7 +3,9 @@ A listing of changes to the project.
 
 0.2 -- 2015/09/14 and on.
 
-  - 2016 Jan 11: Added the "projects-project-maps" module, to handle creation and editing of game maps.
+  - 2016 Jan 11:
+      - Added the "projects-project-maps" module, to handle creation and editing of game maps.
+      - 'wizard-import-orm': include a "read-me" file in the sources. Eventually to be moved out to the project root.
 
   - .
 
