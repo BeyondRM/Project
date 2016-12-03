@@ -1,7 +1,18 @@
-//
 import org.gradle.api.artifacts.*
+//
+buildscript {
+  dependencies {
+    classpath 'de.dynamicfiles.projects.gradle.plugins:javafx-gradle-plugin:8.6.0'
+  }
+  repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+  }
+}
 
-apply plugin: 'base' // To add "clean" task to the root project.
+apply plugin:'base' // To add "clean" task to the root project.
+apply plugin:'maven'
 
 group = 'beyondrm.project'
 version = '0.2'
@@ -13,7 +24,6 @@ subprojects {
 task mergedJavadoc(type:Javadoc, description:'Creates Javadoc from all the projects.') {
   title = 'All modules'
   destinationDir = new File(project.buildDir, 'merged-javadoc')
-
   // Note: The closures below are executed lazily.
   source {
     subprojects*.sourceSets*.main*.allSource
