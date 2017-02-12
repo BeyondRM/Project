@@ -1,6 +1,0 @@
-//
-dependencies {
-  compile project(':projects-project-maps')
-  compile project(':projects-utility-spi')
-  compile project(':wizard-import-orm')
-}

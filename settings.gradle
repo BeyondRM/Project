@@ -1,7 +1,0 @@
-//
-include \
-':projects',
-':projects-project-maps',\
-':projects-utility-spi',\
-':wizard-import-orm',\
-':projects-versioning'
